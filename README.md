@@ -1,3 +1,10 @@
+-- This fork preserves the "tags" list in the wysihtml5 parser.
+
+Compare: https://github.com/jhollingworth/bootstrap-wysihtml5/blob/067a69b0be3df554fdf266102e04a2eb4cdee858/src/bootstrap-wysihtml5.js#L405
+with: https://github.com/xing/wysihtml5/blob/73b668267a3db1822732014de73fb8dfe20a8c26/parser_rules/advanced.js#L104
+
+AFAICT, the tag parser was mangled? and was stripping out a large majority of the html present in a client's text forms.
+
 # Bootstrap Wysihtml5 for Rails
 
 Bootstrap is a toolkit from Twitter designed to kickstart development of webapps and sites.
