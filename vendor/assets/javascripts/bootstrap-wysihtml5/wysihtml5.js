@@ -5053,9 +5053,7 @@ wysihtml5.dom.parse = (function() {
     url: (function() {
       //var REG_EXP = /^https?:\/\//i;
       return function(attributeValue) {
-        if (!attributeValue) {
-          return "";
-        }
+        return attributeValue;
       };
     })(),
     

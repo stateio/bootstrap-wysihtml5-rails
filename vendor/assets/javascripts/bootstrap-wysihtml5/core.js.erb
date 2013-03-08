@@ -395,7 +395,11 @@
             ul:     {},
             ol:     {},
             li:     {},
-            a:      {}
+            a:      {
+              check_attributes: {
+                href:   "url" // important to avoid XSS
+              }
+            }
           }
         },
         stylesheets: ["<%= Rails.configuration.assets.prefix + '/bootstrap-wysihtml5/wysiwyg-color.css' %>"], // (path_to_project/lib/css/wysiwyg-color.css)
